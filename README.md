@@ -1,3 +1,4 @@
+<img src="Hitotoki.materials/Small Cover.png" align="left" />
 # Hitotoki
 _A riddle-poem by Bradley Buchanan_
 
