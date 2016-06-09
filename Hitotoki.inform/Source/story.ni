@@ -1,30 +1,60 @@
-"Hitotoki" by Bradley Buchanan
+"Hitotoki" by Bradley Buchanan.
+
+The story headline is "A riddle-poem."
+The release number is 2.
 
 ["Hitotoki" is a Japanese noun commonly translated as "a moment."  This game attempts to describe a moment in time.  The moment in question is the exact moment that winter changes to spring.  The game's responses are written entirely in English haiku (as well as I can manage) and seasons (or the change in seasons) is a common theme in traditional Japanese haiku.  I tried to respect the form as well as I know how with my limited poetic skill.
 
 The goal of the game is to figure out what is going on.  The game takes place in a frozen moment in time, and the player is not allowed any actions beyond examining their surroundings.  Eventually they should notice that time itself is an observable object, and the solution of the game is to "start time" and so usher in the spring.  No explicit comment is made on why the player has this power; it just fits the conceit of the piece.]
 
-Release along with an interpreter.
-
-Use no scoring.
-
+Release along with an interpreter and the source text.
 Include Assorted Text Generation by Emily Short.
+Include Response Assistant by Aaron Reed.
+Use no scoring.
 
 Part - Mechanics
 
 Chapter - Poetic Mechanics
 
 A thing has a number called syllables.  The syllables of a thing is usually 1.
+Definition: A thing is monosyllabic if its syllables is 1.
 
 Chapter - Frozen Time
 
 Instead of doing anything except looking, examining or activating, say "Unfortunately,[line break]You are unable to move.[line break]Try EXAMINE-ing."
+
+Instead of examining the player, say "This moment, [we] seek[line break]Enlightenment, free of self.[line break]Answers lie without."
+
+Instead of taking inventory, say "Possessions distract[line break]From the wealth of [nature]'s gifts[line break]All around you now."
+
+[command not understood]
+The parser error internal rule response (A) is "Your mind is troubled[line break]Trying to make sense of the[line break]Last thing that you typed."
+
+[command not completely understood]
+The parser error internal rule response (B) is "Your mind is troubled[line break]Trying to make sense of the[line break]Last thing that you typed."
+
+[unknown object]
+The parser error internal rule response (E) is "Though you search the glade[line break]You can't see any such thing.[line break]Look for something else?"
+
+[unknown verb]
+The parser error internal rule response (N) is "It's becoming clear[line break]Action is not the answer.[line break]Try EXAMINIE-ing."
+
+[empty line]
+The parser error internal rule response (X) is "You empty your mind[line break]Resting in the peaceful [wood].[line break]No need to hurry."
+
+[What do you want to verb?]
+The parser clarification internal rule response (E) is "You will have to be[line break]A little more specific.[line break]Try EXAMINE [one of]WOOD[or]MOTES[or]DEW[at random]."
+
+[confirm Quit]
+The quit the game rule response (A) is "Really?"
 
 Part - Setting
 
 Chapter - Scenery
 
 Glade is a room.  The description is "You stand in a [wood],[line break]Shimmering with [motes] and [dew].[line break]A [dirt path] leads [east]." [The initial description hints three directions for observation:  First, the wood (implying trees) which will lead the player to explore aspects of spring.  Second, the dirt path which will show rocks and snow on the ground, and explore the end of winter.  Finally, the dew subtly points to the waterfall, where talk of frozen time should hint the player toward the ending - starting time again and ushering in the Spring.]
+
+A thing called nature is scenery in the glade. Instead of examining nature, try looking.
 
 Instead of going east, say "Drawn to [the sunrise][line break]You will legs and feet to move[line break]But they will not go."
 
@@ -58,9 +88,9 @@ A waterfall is scenery in Glade with syllables 3.  The description of a waterfal
 
 A silver pool is scenery in Glade with syllables 3. The description of a silver pool is "Surface always new[line break]Undulates and ripples [']neath[line break]Pale [lily-pads]."
 
-Some lily-pads are scenery in Glade with syllables 3. The description of some lily-pads is "Regal floating rug[line break]All dignified, save for one:[line break]A [frog] leaps away." Understand "lilypad/lilypads" as the lily-pads.
+Some lily-pads are scenery in Glade with syllables 3. The description of some lily-pads is "Regal floating rug[line break]All dignified, save for one:[line break]A [frog] leaps away." Understand "lilypad/lilypads/rug/dignified/undignified" as the lily-pads.
 
-A frog is a scenery animal in Glade.  The description of a frog is "Suspended in flight,[line break]Caught fast in the web of [time-itself],[line break]Legs outstretched behind."
+A frog is a scenery animal in Glade.  The description of a frog is "Suspended in flight,[line break]Caught fast in the web of [time-itself],[line break]Legs outstretched behind." Understand "legs" as the frog.
 
 
 Chapter - Time
