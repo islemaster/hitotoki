@@ -1,6 +1,6 @@
 "Hitotoki" by Bradley Buchanan.
 
-The story headline is "A riddle-poem."
+The story headline is "A riddle-poem".
 The release number is 2.
 
 ["Hitotoki" is a Japanese noun commonly translated as "a moment."  This game attempts to describe a moment in time.  The moment in question is the exact moment that winter changes to spring.  The game's responses are written entirely in English haiku (as well as I can manage) and seasons (or the change in seasons) is a common theme in traditional Japanese haiku.  I tried to respect the form as well as I know how with my limited poetic skill.
@@ -8,6 +8,7 @@ The release number is 2.
 The goal of the game is to figure out what is going on.  The game takes place in a frozen moment in time, and the player is not allowed any actions beyond examining their surroundings.  Eventually they should notice that time itself is an observable object, and the solution of the game is to "start time" and so usher in the spring.  No explicit comment is made on why the player has this power; it just fits the conceit of the piece.]
 
 Release along with an interpreter and the source text.
+Release along with cover art ("The Kanji for hour").
 Include Assorted Text Generation by Emily Short.
 Include Response Assistant by Aaron Reed.
 Use no scoring.
