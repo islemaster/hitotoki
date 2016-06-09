@@ -1,0 +1,12 @@
+.idea
+Hitotoki.inform/Build
+Hitotoki.inform/Index
+Hitotoki.materials/Release
+*.blurb
+*.dbg
+*.iFiction
+*.plist
+*.rtf
+*.skein
+*.swp
+
