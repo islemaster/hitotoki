@@ -13,6 +13,8 @@ Include Assorted Text Generation by Emily Short.
 Include Response Assistant by Aaron Reed.
 Use no scoring.
 
+[TODO: Compose ABOUT text, thank E. for testing.]
+
 Part - Mechanics
 
 Chapter - Poetic Mechanics
@@ -24,9 +26,13 @@ Chapter - Frozen Time
 
 Instead of doing anything except looking, examining or activating, say "Unfortunately,[line break]You are unable to move.[line break]Try EXAMINE-ing."
 
+[TODO: Handle the senses separately here]
+
 Instead of examining the player, say "This moment, [we] seek[line break]Enlightenment, free of self.[line break]Answers lie without."
 
 Instead of taking inventory, say "Possessions distract[line break]From the wealth of [nature]'s gifts[line break]All around you now."
+
+[TODO: Check the full list of parser errors]
 
 [command not understood]
 The parser error internal rule response (A) is "Your mind is troubled[line break]Trying to make sense of the[line break]Last thing that you typed."
@@ -35,7 +41,7 @@ The parser error internal rule response (A) is "Your mind is troubled[line break
 The parser error internal rule response (B) is "Your mind is troubled[line break]Trying to make sense of the[line break]Last thing that you typed."
 
 [unknown object]
-The parser error internal rule response (E) is "Though you search the glade[line break]You can't see any such thing.[line break]Look for something else?"
+The parser error internal rule response (E) is "Though you search the glade[line break]You can't see any such thing.[line break]Look for something else." [TODO: Could do hinting here - use adaptive prose to push toward important unexamined things.]
 
 [unknown verb]
 The parser error internal rule response (N) is "It's becoming clear[line break]Action is not the answer.[line break]Try EXAMINIE-ing."
@@ -44,7 +50,7 @@ The parser error internal rule response (N) is "It's becoming clear[line break]A
 The parser error internal rule response (X) is "You empty your mind[line break]Resting in the peaceful [wood].[line break]No need to hurry."
 
 [What do you want to verb?]
-The parser clarification internal rule response (E) is "You will have to be[line break]A little more specific.[line break]Try EXAMINE [one of]WOOD[or]MOTES[or]DEW[at random]."
+The parser clarification internal rule response (E) is "You will have to be[line break]A little more specific.[line break]Try EXAMINE [one of]WOOD[or]MOTES[or]DEW[at random]." [TODO: This should also do stronger hinting.]
 
 [confirm Quit]
 The quit the game rule response (A) is "Really?"
@@ -103,6 +109,8 @@ Understand "wait" as a mistake ("Meaningless for now.[line break]An eternity has
 
 Section - Activating Time
 
+[We probably need more synonyms for activate, and we definitely need more hinting that this is possible.]
+
 [This is the action by which the player will start time and win the game.]
 Activating is an action applying to one thing.  Understand "start [something]" or "activate [something]" or "begin [something]" or "resume [something]" as activating.
 
@@ -110,4 +118,5 @@ Check activating something (this is the one-syllable bad activation rule): If th
 Check activating something (this is the two-syllable bad activation rule): If the noun is not time-itself and syllables of the noun is 2, say "[one of]Your will does not budge[or]Your mind cannot move[at random][line break][The noun] a single inch.[line break]Time's grip holds [them] fast." instead.
 Check activating something (this is the three-syllable bad activation rule): If the noun is not time-itself and syllables of the noun is 3, say "[one of]As if locked in ice,[or]Despite your attempt[at random][line break][The noun] [do not] move.[line break]Time's grip holds [them] fast." instead.
 
+[Can I express this with less metaphor?]
 Carry out activating: Say "You will [time-itself] to move.[line break]Winter slumbers; Spring-bird sings,[line break]Thanks to you, my friend."; End the story saying "Spring has arrived".
