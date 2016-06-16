@@ -1,7 +1,7 @@
 "Hitotoki" by Bradley Buchanan.
 
 The story headline is "A riddle-poem".
-The release number is 2.
+The release number is 3.
 
 ["Hitotoki" is a Japanese noun commonly translated as "a moment."  This game attempts to describe a moment in time.  The moment in question is the exact moment that winter changes to spring.  The game's responses are written entirely in English haiku (as well as I can manage) and seasons (or the change in seasons) is a common theme in traditional Japanese haiku.  I tried to respect the form as well as I know how with my limited poetic skill.
 
@@ -13,7 +13,44 @@ Include Assorted Text Generation by Emily Short.
 Include Response Assistant by Aaron Reed.
 Use no scoring.
 
-[TODO: Compose ABOUT text, thank E. for testing.]
+Section - Credits
+
+Displaying about-text is an action out of world.  Understand "about" or "credits" as displaying about-text.
+Report displaying about-text:
+	say "'Hitotoki' is a Japanese noun commonly translated as 'a moment.' This game attempts to describe a moment in time.  It is inspired by haiku, and includes themes common in traditional haiku, in addition to always responding in haiku-like 5-7-5 phrases.  I'm no poet, but I've done my best to respect the form.";
+	say "[line break]";
+	say "The object of the game is to fully experience the moment.  There is an ending, but bringing it about is a bit of a riddle.  If you'd like to know more, read the spoilerful [bold type]postscript[roman type].";
+	say "[line break]";
+	say "Many thanks to my alpha-tester E whose early insight into the nature of the work brought much into focus and made it exciting to work on this project again."
+
+Section - Postscript
+
+Printing the author's note is an activity.
+Rule for printing the author's note:
+	say "[italic type][story title][roman type] describes a frozen moment in time - the moment when winter ends and spring begins.";
+	say "[line break]";
+	say "I think the earliest version of this work was a few poems in a notebook back in 2013, but the first proper release didn't occur until June 2016. I set out to create an IF work in poetry instead of prose, wanting to play with generated text.  Haiku was a good fit both because it's brief (working nicely into the call-and-response format) and because it eliminated the need to manage rhymes.  At that point I started reading up on themes in traditional Japanese haiku: Nature, the seasons, contrast of two ideas, capturing a fleeting moment or a particular impression.  Taking the 'moment' idea a step further (and not wanting to implement too much) led to the frozen time conceit, which I think locks down the inevitable goofiness of player agency and helps the piece feel more poetic.";
+	say "[line break]";
+	say "The goal of the game is to figure out what is going on.  Within the frozen moment the player is not allowed any action beyond examining their surroundings, but eventually I hope that they realize that time itself is an observable object, and the 'solution' of the game is to [bold type]start time[roman type] and usher in the spring.  No explicit comment is made on why the player has this power; it just felt right that the ultimate interaction with a moment is to move on to the next one.";
+	say "[line break]";
+	say "The game begins with this room description:";
+	say "[line break]";
+	say "[line break][bold type]Glade[roman type][line break][the description of Glade][line break]";
+	say "[line break]";
+	say "The initial description hints three directions for observation:  First, the dirt path (the most obvious course of action) leads to rocks and snow on the ground, and represents the end of winter.  Second, the wood (implying trees) which will lead the player to explore aspects of spring.    Finally, the dew subtly points to the waterfall, where frozen time is more conspicuous and should hint the player toward the ending - starting time again and ushering in the spring.";
+	say "[line break]";
+	say "Thank you for playing! I hope you enjoyed [italic type][story title][roman type].";
+	say "[line break]";
+	say "Bradley Buchanan <bradley.c.buchanan@gmail.com>, June 2016."
+
+[The postscript is available at any time by typing POSTSCRIPT or AUTHOR'S NOTE]
+Displaying the author's note is an action out of world. Understand "postscript" or "author's note" as displaying the author's note.
+Report displaying the author's note: Carry out the printing the author's note activity.
+
+[The postscript is also an endgame option]
+Table of Final Question Options (continued)
+final question wording		only if victorious		topic			final response rule	final response activity
+"read the POSTSCRIPT"	false			"postscript"		--				printing the author's note
 
 Part - Mechanics
 
