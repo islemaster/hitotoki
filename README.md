@@ -2,7 +2,7 @@
 # Hitotoki
 _A riddle-poem by Bradley Buchanan_
 
-[Play in browser](http://bradleycbuchanan.com/Hitotoki/play.html) | [Download gblorb](http://bradleycbuchanan.com/Hitotoki/Hitotoki.gblorb) | [Browse source (HTML)](http://bradleycbuchanan.com/Hitotoki/source.html)
+[Play in browser](http://islemaster.github.io/hitotoki/play.html) | [Download gblorb](http://islemaster.github.io/hitotoki/Hitotoki.gblorb) | [Browse source (HTML)](http://islemaster.github.io/hitotoki/source.html)
 
 This tiny work explores what interactive fiction looks like in poetry instead of prose.  I won't claim that the poetry is good, but I think it makes for a cute little puzzle.
 
