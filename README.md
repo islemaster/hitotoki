@@ -1,5 +1,5 @@
 <img src="Hitotoki.materials/Small Cover.png" align="left" />
-# Hitotoki
+# Hitotoki [![Build Status](https://travis-ci.org/islemaster/hitotoki.svg?branch=master)](https://travis-ci.org/islemaster/hitotoki)
 _A riddle-poem by Bradley Buchanan_
 
 [Play in browser](http://islemaster.github.io/hitotoki/play.html) | [Download gblorb](http://islemaster.github.io/hitotoki/Hitotoki.gblorb) | [Browse source (HTML)](http://islemaster.github.io/hitotoki/source.html)
